@@ -1,6 +1,7 @@
 # Samples for the SAP Cloud Application Programming Model
+## Description
 
-This repository contains tutorials for the sample apps of the SAP Cloud Application Programming Model.
+This repository contains tutorials for the sample apps of the [SAP Cloud Application Programming Model](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/00823f91779d4d42aa29a498e0535cdf.html).
 
 ## Requirements
 
@@ -10,7 +11,7 @@ For local execution:
 For deploying to SAP HANA on SAP Cloud Platform (Cloud Foundry):
 - Service 'SAP HANA Schemas & HDI Containers'
 
-You may want use a **free trial account** for SAP Cloud Platform.  Follow this [tutorial to create a trial account](https://developers.sap.com/tutorials/hcp-create-trial-account.html).
+You may want use a **free trial account** for SAP Cloud Platform.  Follow the [tutorial to create a trial account](https://developers.sap.com/tutorials/hcp-create-trial-account.html).
 
 
 ## Tutorials
