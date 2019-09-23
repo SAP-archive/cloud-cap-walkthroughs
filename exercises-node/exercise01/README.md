@@ -64,11 +64,11 @@ For all exercises please make sure to use **Google Chrome**.
 
    ![open_workspace](./resources/choose_open_ws.png)
     
-   Expand the **samples** folder and choose **packages**.
+   a. Expand the **cloud-sap-samples** folder and choose **packages**.
    
-   ![open_ws_dialog](./resources/open_ws_dialog.png)
+     ![open_ws_dialog](./resources/open_ws_dialog.png)
    
-   Then choose **Open** to open the sample packages in your workspace. 
+   b. Then choose **Open** to open the sample packages in your workspace. 
    
 Now you are ready to continue with the implementation of the **bookstore** application.
 
@@ -98,7 +98,7 @@ CAP allows you to reuse models from other packages in your project. This means y
 
     You can now reuse entities defined in the products service in the domain model of the bookstore application.
     
-    Note: Throughout these exercises we use Lerna to manage the installation of packages inside the monorepo.
+    >Throughout these exercises we use Lerna to manage the installation of packages inside the monorepo.
     Therefore please make sure to always run `npm install` in the **packages** directory.
 
 3. First, create a file for your domain model:
@@ -251,7 +251,7 @@ Up until this exercise, you have added a domain model, a service definition and 
 
     ![books_results](./resources/books_results.png)
     
-    Note: In the screenshot above, the result JSON is formatted by the Google Chrome extension "JSON Viewer".
+    >In the screenshot above, the result JSON is formatted by the Google Chrome extension "JSON Viewer".
 
 Great job! Your bookstore application is up and running! Now, let's test it out a bit.
 
@@ -317,12 +317,10 @@ Great job! Your bookstore application is up and running! Now, let's test it out 
     ![set_breakpoint](./resources/set_breakpoint.png)
     
    h. Stop and run the application again directly from the debug panel.
-   
-   
-
+      
 3. Let's fire a request to test the custom logic you just developed.
 
-   Open a new terminal from the menu **Terminal** -> **New Terminal** and execute:
+   a. Open a new terminal from the menu **Terminal** -> **New Terminal** and execute:
 
     ```
     curl -X POST http://localhost:4004/catalog/Orders \
@@ -330,11 +328,15 @@ Great job! Your bookstore application is up and running! Now, let's test it out 
     -d '{"ID":1111,"OrderNo":"3","Items":[{"ID":304,"amount":600,"netAmount":"8400","book_ID":"252"}]}'
     ```
 
-    With this request we are trying to order 600 copies of the book "Eleonora" from Edgar Allen Poe. The problem is that there is not enough stock. The debugger stops at the breakpoint where is the error is thrown. To continue running the service, choose **continue**.
+    With this request we are trying to order 600 copies of the book "Eleonora" from Edgar Allen Poe. The problem is that there is not enough stock. The debugger stops at the breakpoint where is the error is thrown. 
+    
+    b. To continue running the service, choose **continue**.
     
     ![paused_breakpoint](./resources/paused_breakpoint.png)
        
-   Go to the **Node Debug Console**. As expected, the response states that the request cannot be completed, because it exceeds the current stock.
+   c. Go to the **Node Debug Console**. 
+   
+   As expected, the response states that the request cannot be completed, because it exceeds the current stock.
 
    ![node_debug_console](./resources/node_debug_console.png)
 
