@@ -235,7 +235,7 @@ Up until this exercise, you have added a domain model, a service definition and 
 
     ![Port description](./resources/port_description.png)
 
-    > If you accidentally closed any of the popups in SAP Web IDE, press **Ctrl + Shift + P** (**Cmd + Shift + P**). In the dialog box, enter **Ports** and you will see a list of available options for managing ports.
+    > If you accidentally closed any of the popups in SAP Application Studio, press **Ctrl + Shift + P** (**Cmd + Shift + P**). In the dialog box, enter **Ports** and you will see a list of available options for managing ports.
     >![Ports options](./resources/ports_options.png)
     >
     > With the **Ports: Preview** you can access all the exposed ports:
