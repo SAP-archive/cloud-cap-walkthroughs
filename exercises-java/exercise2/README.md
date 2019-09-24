@@ -126,8 +126,8 @@ Let's deploy the domain model to a database. Now, you will use SQLite, a light-w
     ```yaml
     ---
     spring:
-    profiles: default
-    datasource:
+      profiles: default
+      datasource:
         url: "jdbc:sqlite:/home/user/projects/products-service/sqlite.db"
         driver-class-name: org.sqlite.JDBC
         initialization-mode: never
