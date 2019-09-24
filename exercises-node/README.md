@@ -14,7 +14,7 @@ In this exercise, you'll set up your development space in SAP Application Studio
 
 ### [Exercise 2: Create a Reviews Service with Synchronous and Asynchronous APIs](exercise02/README.md)
 
-In this exercise, you'll use CDS to develop a reviews service which is able to emit events. With this, your consuming application can react on changes whithout the need to trigger synchronous requests. It doesn't even need to be running when changes occur since events are safely stored in a queue. By the end of this exercise, you will have implemented actions, created events and have a service ready to be consumed by the bookstore application.
+In this exercise, you'll use CDS to develop a reviews service which is able to emit events. With this, your consuming application can react on changes without the need to trigger synchronous requests. It doesn't even need to be running when changes occur since events are safely stored in a queue. By the end of this exercise, you will have implemented actions, created events and have a service ready to be consumed by the bookstore application.
 
 ### [Exercise 3: Consume the Reviews Service from the Bookstore](exercise03/README.md)
 
