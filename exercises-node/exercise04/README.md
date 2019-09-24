@@ -182,4 +182,4 @@ For all exercises please make sure to use **Google Chrome**. If you haven't comp
 
 ## Well done!
    
-You have successfully created a List report OData V4 application consuming data from the catalog service in your Bookshop application
+You have successfully created a List report OData V4 application consuming data from the catalog service in your Bookshop application. In [Exercise 5](../exercise05/README.md) you will create an S/4 extension with SAP Cloud Application Programming Model and SAP Cloud SDK.
