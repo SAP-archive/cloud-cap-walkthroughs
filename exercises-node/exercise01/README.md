@@ -64,7 +64,7 @@ For all exercises please make sure to use **Google Chrome**.
 
    ![open_workspace](./resources/choose_open_ws.png)
     
-   a. Expand the **cloud-sap-samples** folder and choose **packages**.
+   a. Expand the **cloud-cap-samples** folder and choose **packages**.
    
      ![open_ws_dialog](./resources/open_ws_dialog.png)
    
