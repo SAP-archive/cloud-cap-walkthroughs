@@ -17,9 +17,9 @@ You may want use a **free trial account** for SAP Cloud Platform.  Follow the [t
 ## Tutorials
 
 
-### [Getting started with the SAP Cloud Application Programming Model ](exercises-java/readme.md)
+### [Java: Getting started with the SAP Cloud Application Programming Model](exercises-java/)
 
-<!-- ### [Rapid Service Development with SAP Cloud Application Programming Model](exercises-node/) -->
+### [Node.js: Rapid Service Development with SAP Cloud Application Programming Model](exercises-node/)
 
 
 
