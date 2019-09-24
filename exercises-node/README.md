@@ -24,7 +24,7 @@ In this exercise, the bookstore and reviews service will come together. The book
 
 In this exercise, you'll be using SAP Fiori Elements to create a UI for the catalog service that is exposed in the Bookstore application. The catalog service is exposed as an OData V4 service and we will create a List Report application on top of it, and then run it locally.
 
-### [Exercise 5: Create an S/4 Extension with SAP Cloud Application Programming Model and SAP Cloud SDK [optional]](https://github.wdf.sap.corp/i347491/scratch/blob/master/temp-tut-refs.md)
+### [Exercise 5: Create an S/4 Extension with SAP Cloud Application Programming Model and SAP Cloud SDK [optional]](exercise05/README.md)
 
 This exercise will take you to the SAP TechEd 2019 App Space mission *S/4HANA Extension with Cloud Application Programming Model*, which will show you how the SAP Cloud Application Programming Model can be used with the SAP Cloud SDK to consume a service from an SAP S/4HANA system in the context of extending core functionality with a new app and service.
 

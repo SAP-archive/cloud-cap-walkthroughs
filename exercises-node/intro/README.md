@@ -168,7 +168,7 @@ Now, let’s add a database to serve some data. For this exercise, we'll keep it
     ```
     cds deploy --to sqlite
     ```
-    As a result, a **bookshop.db** database file is created and the **package.json** is updated with the configuration needed for the database. Subsequent deployments can be run with `cds deploy`. You do not need to add any arguments.
+    As a result, a **sqlite.db** database file is created and the **package.json** is updated with the configuration needed for the database. Subsequent deployments can be run with `cds deploy`. You do not need to add any arguments.
 
     ![cds deploy](./images/cds_deploy_sqlite.png?raw=true)
 
