@@ -115,7 +115,7 @@ While initializing the application an `Application.java` file was created, which
 
 As you can see, the file does not contain CAP specific startup instructions. It is the typical boilerplate code found in every Spring Boot application. The initialization of the CAP Java runtime is done by Spring automatically, based on the dependencies defined in the `pom.xml`.
 
-1. To start the application, go to the root of your project (`cd ~/projects/products-service`) in the terminal and run `mvn spring-boot:run`
+1. To start the application, go to the root of your project (`cd ~/projects/products-service`) in the terminal and run `mvn clean spring-boot:run`
 
 2. A notifaction tab saying "A service is listenning to port 8080" will appear. 
 
@@ -203,7 +203,7 @@ Later on in the session, you'll learn that CAP Java runtime can handle all CRUD 
 
 3. Stop your application if it is still running by pressing `CTRL + C` in the terminal.
 
-4. Restart your application by running `mvn spring-boot:run` in the terminal.
+4. Restart your application by running `mvn clean spring-boot:run` in the terminal.
 
    Choose **Open in New Tab** when prompted.
 
