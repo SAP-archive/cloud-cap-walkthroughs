@@ -276,7 +276,7 @@ We will now add an event that is emitted whenever a review is created, updated o
     [comment]: # (TODO: Screenshot slightly different)
 
 
-    Here we implemented a custom event handler that is called after every create, update and delete request on the exposed entity `Reviews`. If the request succeeds, a `reviewed` event is emitted that contains the reviewed subject and its average rating. [Learn more about custom handlers here.](https://github.wdf.sap.corp/pages/cap/guides/providing-services#add-custom-logic)
+    Here we implemented a custom event handler that is called after every create, update and delete request on the exposed entity `Reviews`. If the request succeeds, a `reviewed` event is emitted that contains the reviewed subject and its average rating. [Learn more about custom handlers here.](https://cap.cloud.sap/docs/guides/providing-services#add-custom-logic)
 
 
 3. Let's test the latest additions to the reviews service:
