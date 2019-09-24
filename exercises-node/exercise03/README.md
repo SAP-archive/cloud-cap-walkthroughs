@@ -105,7 +105,7 @@ For all exercises please make sure to use **Google Chrome**. If you haven't comp
 
      c. Now, open a new terminal with **Terminal** -> **New Terminal**.
   
-     b. Paste and execute the following curl command in a new the terminal:
+     d. Paste and execute the following curl command in a new the terminal:
 
     ```
       curl -X POST http://localhost:4004/reviews/Reviews \
