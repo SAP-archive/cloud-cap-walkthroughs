@@ -20,25 +20,27 @@ For all exercises please make sure to use **Google Chrome**. If you haven't comp
 
 ### Part A: Create the UI app
 
-1. Open a new terminal with **Terminal -> New Terminal**  
+1. Stop all running services in their respective terminals with `CTRL + C`.  
 
-   Go to the root of your **bookstore** project with `cd bookstore`.
+2. Open a new terminal with **Terminal -> New Terminal**.
+
+3. Go to the root of your **bookstore** project with `cd bookstore`.
    
-2. To create the UI application we'll be using the Yeoman tool. Yeoman provides a simple CLI for project generators that helps you kickstart new projects by answering a short set of quesions.
+4. To create the UI application, we'll be using the Yeoman tool. Yeoman provides a simple CLI for project generators that helps you kickstart new projects by answering a few quesions.
 
-   a. In the terminal initialize Yeoman with the `yo` command.
+   a. To initialize Yeoman, in the terminal run the following command.
  
       ```
       yo
       ```
       
-     Choose **no** in the question presented. It's a generic yo question to give permission to report your usage, and it is not relevant.  
+   b. Choose **n** in the question presented. It's a generic yo question to give permission to report your usage, and it is not relevant for this exercise.  
    
-   b. Choose **Fiori-Application** using the keyboard arrows keys.
+   c. Choose **Fiori Application** using the keyboard arrows keys and press enter.
 
       ![terminal_yo](./resources/terminal_yo.png)
 
-3.	To define your SAP Fiori applicaton, you'll answer the following questions.
+5.	To define your SAP Fiori applicaton, you'll answer the following questions.
 
      >At the end of this step, you have a screenshot of all the answers. 
      
@@ -63,9 +65,13 @@ For all exercises please make sure to use **Google Chrome**. If you haven't comp
    
 ### Part B: Configure the SAP Fiori elements
   
-1. Create a new file under the **app** folder of the **Bookstore** project and call it `booksAnnotation.cds`.
+1. Locate the **app** folder of the **Bookstore** project. 
 
-2. Add the following content:
+   a. Right-click the **app** folder and choose **New File**.
+   
+   b. Call it `booksAnnotation.cds`.
+
+2. In your newly created file, add the following content:
    
   ```swift
    using sap.capire.bookstore.CatalogService as CatalogService  from '../srv/services';
@@ -139,9 +145,9 @@ For all exercises please make sure to use **Google Chrome**. If you haven't comp
       
 ### Part C: Run the Bookstore UI app
 
-1. In the terminal execute `cds run --in-memory`
+1. In the terminal, execute `cds run --in-memory`
       
-2. When prompted, choose **Open in New Tab**
+2. When prompted, choose **Open in New Tab**.
 
    ![command_palette](./resources/port.png)
          
@@ -149,16 +155,16 @@ For all exercises please make sure to use **Google Chrome**. If you haven't comp
       
    ![command_palette](./resources/index.png)
          
-4. Click on `</bookList/webapp/index.html>`. 
+4. Click on `/bookList/webapp/index.html`. 
 
    A new tab opens with a sandbox launchpad. You should see your app tile.
 
    ![command_palette](./resources/sandbox.png)
          
-5. Click on the tile. Your bookList application opens exposing your catalog service data.
+5. Click on the tile to open your bookList application and view your catalog service data.
 
    ![command_palette](./resources/app.png)
 
 ## Well done!
    
-You have successfully created a List report OData V4 application consuming data from the catalog service in your Bookshop application. In [Exercise 5](../exercise05/README.md) you will create an S/4 extension with SAP Cloud Application Programming Model and SAP Cloud SDK.
+You have successfully created a List report OData V4 application consuming data from the catalog service in your Bookstore application. In [Exercise 5](../exercise05/README.md) you will create an S/4 extension with SAP Cloud Application Programming Model and SAP Cloud SDK.
