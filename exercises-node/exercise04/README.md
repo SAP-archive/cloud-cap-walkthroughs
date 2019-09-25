@@ -88,7 +88,7 @@ For all exercises please make sure to use **Google Chrome**. If you haven't comp
 
 2. Add the following content:
    
-  ```
+  ```swift
    using sap.capire.bookstore.CatalogService as CatalogService  from '../srv/services';
 
    ////////////////////////////////////////////////////////////////////////////
