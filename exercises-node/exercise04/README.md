@@ -40,39 +40,18 @@ For all exercises please make sure to use **Google Chrome**. If you haven't comp
 
 3.	To define your SAP Fiori applicaton, you'll answer the following questions.
 
-     At the end of this step, you have a screenshot of all the answers. 
-   
-      a. **Specify a path to the root project?**. 
-      
-      Press **ENTER** to choose the path to bookstore as proposed by default. 
-           
-      b. **Specify a path to the fiori application?**. 
-      
-      Press **ENTER** to choose the path to **app** folder as proposed by default.
-        
-      c. **Select the template you want to use**. 
-
-      Choose **Fiori Elements List Report OData V4 application**, which is the type of the application we want to create.
-
-      d. **Enter application name**. 
-
-      Add **bookList**.    
-
-      e. **Enter namespace**. 
-
-      Press **ENTER** to choose **ns** as proposed by default.
-
-      f. **Select the OData service name**. 
-
-      Choose **CatalogService** from the list. This is the service that we'll consume in our SAP Fiori application.
-
-      g. **Select the list entity**. 
-
-      Choose **Books** from the list. The **Books** entity is the entity that we'll present in the UI List.
-
-      h. **Enter the navigation entity or skip**. 
-
-      Press **ENTER**.
+     >At the end of this step, you have a screenshot of all the answers. 
+     
+     | Question  | Answer |
+     | ------------- | ------------- |
+     | **Specify a path to the root project?**  | Press **ENTER** to choose the path to **bookstore** as proposed by default.   |
+     | **Specify a path to the fiori application?**  | Press **ENTER** to choose the path to the **app** folder as proposed by default.  |
+     | **Select the template you want to use** | Choose **Fiori Elements List Report OData V4 application**. This is the application type we want to create. |
+     | **Enter application name**  | Add **bookList**. |
+     | **Enter namespace** |  Press **ENTER** to choose **ns** as proposed by default. |
+     | **Select the OData service name** | Choose **CatalogService** from the list. This is the service that we'll consume in our SAP Fiori application. |
+     | **Select the list entity** | Choose **Books** from the list. The **Books** entity is the entity that we'll present in the UI List. |
+     |  **Enter the navigation entity or skip**. | Press **ENTER**. |
       
    Your terminal should look like this:
       
