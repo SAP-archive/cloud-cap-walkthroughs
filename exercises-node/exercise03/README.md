@@ -170,8 +170,9 @@ In order to consume events of the reviews service as an external service, we onl
      PORT=4005 cds run bookstore --in-memory
      ```
      
-  
-     d. Open a third terminal window and execute the following curl command:
+     d. Choose **Expose and Open** and provide a description - for example: **bookstore**.
+    
+     e. Open a third terminal window and execute the following curl command:
 
     ```sh
       curl -X POST http://localhost:4004/reviews/Reviews \
