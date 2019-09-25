@@ -27,7 +27,7 @@ For all exercises please make sure to use **Google Chrome**. If you haven't comp
 
    And run the following command:
   
-    ```
+    ```sh
     npm install $(npm pack ./reviews-service -s)
     ```
 
@@ -53,7 +53,7 @@ For all exercises please make sure to use **Google Chrome**. If you haven't comp
 
    Add the following content:
 
-   ```
+   ```swift
    // Adding reviews via capire-reviews service
    using { sap.capire.reviews.ReviewsService } from 'reviews-service';
    ```
@@ -64,7 +64,7 @@ For all exercises please make sure to use **Google Chrome**. If you haven't comp
 
 5. To test the reuse, we'll run the bookstore application. From the terminal execute:
 
-    ```
+    ```sh
     cds run bookstore --in-memory
     ```
 
@@ -107,7 +107,7 @@ For all exercises please make sure to use **Google Chrome**. If you haven't comp
   
      d. Paste and execute the following curl command in a new the terminal:
 
-    ```
+    ```sh
       curl -X POST http://localhost:4004/reviews/Reviews \
       -H "Content-Type: application/json" \
       -d '{
@@ -158,7 +158,7 @@ In order to consume events of the reviews service as an external service, we onl
 
      b. In the same terminal execute
      
-    ```
+    ```sh
     CDS_REQUIRES_MESSAGING_CREDENTIALS_FILE=default cds run reviews-service --in-memory
     ```
      
@@ -166,14 +166,14 @@ In order to consume events of the reviews service as an external service, we onl
      
      c. To start the bookstore, open a new terminal in the **packages** folder.
        
-     ```
+     ```sh
      PORT=4005 cds run bookstore --in-memory
      ```
      
   
      d. Open a third terminal window and execute the following curl command:
 
-    ```
+    ```sh
       curl -X POST http://localhost:4004/reviews/Reviews \
       -H "Content-Type: application/json" \
       -d '{
@@ -204,13 +204,13 @@ First, in the bookstore we need to declare the reviews service as an OData servi
 
     Replace
 
-    ```
+    ```swift
     using { sap.capire.reviews.ReviewsService } from 'reviews-service';
     ```
 
     with
 
-    ```
+    ```swift
     using { sap.capire.reviews.ReviewsService as external} from 'reviews-service';
 
     extend service CatalogService {
@@ -220,7 +220,7 @@ First, in the bookstore we need to declare the reviews service as an OData servi
 
 2. In the `services.js` file add the following code at the end of the file before the closing `}` bracket:
 
-    ```
+    ```js
     // delegate requests to reviews service
     srv.on('READ', 'Reviews', async (req) => {
       const { Reviews } = reviews_srv.entities
