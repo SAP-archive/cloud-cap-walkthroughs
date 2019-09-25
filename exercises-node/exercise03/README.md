@@ -244,7 +244,7 @@ First, in the bookstore we need to declare the reviews service as an OData servi
    
    b. Run `PORT=4005 cds run bookstore --in-memory`.
 
-4. When prompted, choose **Expose and Open**.
+4. When prompted, choose **Open in New Tab**.
 
    You can also reopen the browser window with the landing page of the bookstore.
 
