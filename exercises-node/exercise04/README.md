@@ -28,7 +28,7 @@ For all exercises please make sure to use **Google Chrome**. If you haven't comp
    
 4. To create the UI application, we'll be using the Yeoman tool. Yeoman provides a simple CLI for project generators that helps you kickstart new projects by answering a few quesions.
 
-   a. To initialize Yeoman, in the terminal run the following command.
+   a. To initialize Yeoman, in the terminal run the following command:
  
       ```
       yo
