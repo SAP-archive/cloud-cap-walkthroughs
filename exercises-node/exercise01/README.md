@@ -24,8 +24,6 @@ For all exercises please make sure to use **Google Chrome**.
 
 1. Open SAP Application Studio and login with the credentials provided by your session instructors.
 
-   https://caa265-teched2019-teched-h2o.cfapps.eu10.hana.ondemand.com/
-
 2. To create your development space, choose **Create Dev Space**.
 
     ![create_dev_space](./resources/create_dev_space.png)
