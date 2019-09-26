@@ -35,7 +35,7 @@ For all exercises please make sure to use **Google Chrome**. If you haven't comp
   
   >![pwd_command](./resources/pwd_command.png)
 
-3. In the **projects/samples/packages** directory, create a new CDS project for the reviews service by executing:
+3. In the **packages** directory, create a new CDS project for the reviews service by executing:
 
     ```
     cds init reviews-service
