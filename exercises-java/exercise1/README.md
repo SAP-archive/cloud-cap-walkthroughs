@@ -4,7 +4,7 @@ First things first, you need to set up your development environment and check th
 
 For this exercise, we'll use the new SAP Application Studio as the development tool of choice. SAP Application Studio provides a web-based Visual Studio Code-like experience. So it's like VS Code, but for your browser.  What's great about using SAP Application Studio? You get an editor, useful extensions and all the tools required to develop CAP applications and full access to the terminal.
 
-To make sure everything is set up correctly, this exercise also includes how to build & run a simple Hello World application. CAP supports both Java and Node.js development. But for this exercise, we'll be using Java. The CAP Java stack is able to tightly integrate with [Spring Boot](https://spring.io/projects/spring-boot), which provides a lot of features out of the box. This means, Spring Boot will be your runtime container.
+To make sure everything is set up correctly, this exercise also includes how to build & run a simple Hello World application. CAP supports both Java and Node.js development. But for this exercise, we'll be using Java. The [CAP Java stack](https://cap.cloud.sap/docs/java/) is able to tightly integrate with [Spring Boot](https://spring.io/projects/spring-boot), which provides a lot of features out of the box. This means, Spring Boot will be your runtime container.
 
 ## Open SAP Application Studio and create your Dev Space
 
@@ -70,7 +70,7 @@ CAP applications use [Core Data Services](https://cap.cloud.sap/docs/cds/) (CDS)
 - data structures by using [entity definitions](https://cap.cloud.sap/docs/cds/cdl#entities-views)
 - how data structures are consumed by using [service definitions](https://cap.cloud.sap/docs/cds/cdl#services)
 
-In this step, you'll define a simple service, which also defines it's own entity. In more complex applications, services usually expose projections on entities defined in the data model. You will see this later in [Exercise 2](../exercise2/README.md).
+In this step, you'll define a simple service, which also defines its own entity. In more complex applications, services usually expose projections on entities defined in the data model. You will see this later in [Exercise 2](../exercise2/README.md).
 
 1. Right-click on the `srv` folder, choose **New File**.
 
@@ -197,8 +197,8 @@ Later on in the session, you'll learn that CAP Java runtime can handle all CRUD 
 
     The event handler uses the following APIs, which are available for Service Providers in CAP Java:
 
-    * Event handler classes have to implement the marker interface `EventHandler` and register themselves as Spring Beans (`@Component`). The marker interface is important, because it enables the CAP Java runtime to identify these classes among all Spring Beans.
-    * Event handler methods are registered with `@On`, `@Before` or `@After` annotations. Every event, such as an entity creation, runs through these three phases. Each phase has a slightly different semantic. You will learn more about these semantics in [Exercise 4](../exercise4/README.md).
+    * [Event handler classes](https://cap.cloud.sap/docs/java/srv-impl#event-handler-classes) have to implement the marker interface `EventHandler` and register themselves as Spring Beans (`@Component`). The marker interface is important, because it enables the CAP Java runtime to identify these classes among all Spring Beans.
+    * [Event handler methods](https://cap.cloud.sap/docs/java/srv-impl#event-handler-methods) are registered with `@On`, `@Before` or `@After` annotations. Every event, such as an entity creation, runs through these three [phases](https://cap.cloud.sap/docs/java/srv-impl#event-phases). Each phase has a slightly different semantic. You will learn more about these semantics in [Exercise 4](../exercise4/README.md).
     * The annotation `@ServiceName` specifies the default service name all event handler methods apply to. Here this is `AdminService`, as this was also the name when defining the service in the CDS model.
     * Event handler methods get an event-specific event context parameter, which provides access to the input parameters of the event and the ability to set the result. For example, let's look at the `CdsCreateEventContext context` parameter. The event we are extending is the `CREATE` event. The type of the context variable is specific to this extended `CREATE` event. The `onCreate` method returns `void`, as the result is set by running: `context.setResult(…)`.
 

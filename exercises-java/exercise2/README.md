@@ -54,7 +54,7 @@ Let's explain these imports and keywords in more detail:
 
 ### The `localized` keyword
 
-The `localized` keyword can be used to mark elements, which require translation. The ability to store translations for different languages and to store a default fallback translation is automatically handled by the CDS model for you. You will see this in action in more detail in [Exercise 3](../exercise3/README.md).
+The `localized` keyword can be used to mark elements, which require translation. The ability to store translations for different languages and to store a default fallback translation is automatically handled by CDS for you. You will see this in action in more detail in [Exercise 3](../exercise3/README.md).
 
 ### Associations and Compositions
 
@@ -135,7 +135,7 @@ Let's deploy the domain model to a database. Now, you will use SQLite, a light-w
 
 ## Use CAP's generic persistence handling
 
-The CAP Java stack provides out-of-the-box capabilities to store and retrieve entities from a database. Therefore no custom coding is required for this. The entities defined in your `AdminService` will be automatically served via OData and you can just delete the `AdminService.java` file that was created earlier.
+The CAP Java stack has a [Persistence Service](https://cap.cloud.sap/docs/java/srv-run#the-persistence-service) that provides out-of-the-box capabilities to store and retrieve entities from a database. Therefore no custom coding is required for this. The entities defined in your `AdminService` will be automatically served via OData and you can just delete the `AdminService.java` file that was created earlier.
 
 1. Delete the `AdminService.java` file in the `handlers` folder, which you have created in [Exercise 1](../exercise1/README.md). 
 
