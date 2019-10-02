@@ -45,7 +45,8 @@ Before you can start using SAP Application Studio, you need to create your devel
 4. Now run:
 
     ```bash
-    mvn -B archetype:generate -DarchetypeArtifactId=cds-services-archetype -DarchetypeGroupId=com.sap.cds -DarchetypeVersion=1.0.1 \
+    mvn -B archetype:generate -DarchetypeArtifactId=cds-services-archetype -DarchetypeGroupId=com.sap.cds \
+    -DarchetypeVersion=1.0.1 -DcdsVersion=3.17.4 \
     -DgroupId=com.sap.teched.cap -DartifactId=products-service -Dpackage=com.sap.teched.cap.productsservice
     ```
     
@@ -117,23 +118,23 @@ As you can see, the file does not contain CAP specific startup instructions. It 
 
 1. To start the application, go to the root of your project (`cd ~/projects/products-service`) in the terminal and run `mvn clean spring-boot:run`
 
-2. A notifaction tab saying "A service is listenning to port 8080" will appear. 
+2. A notifaction tab saying "A service is listening to port 8080" will appear. 
 
     a. Choose `Expose and Open` and provide `app-port` as the unique description. 
     
       <img src="images/expose_open_port.png" width="75%" />
-    
-    b. Press `Enter` to open the application in a new tab.
-    
-      <img src="images/products_welcome_page.png" width="60%" />
-   
+
     >In case you missed the notification tab "A service is listening to port 8080", you can reopen it:
     >    
     >1. From the main menu, go to **View**, **Find Command** to open the command palette.
     >
-    >2. Type **Ports: Expose** and select or enter `8080`. Provide `app-port` as the unique description. 
+    >2. Type **Ports: Expose** and select or enter `8080`. Provide `app-port` as the unique description.
     >
-    >From the command palette, you can also use the ports command to preview, unexpose and rename ports.
+    >3. If you do not see port `8080` listed in the **Ports: Expose** view, use **View**, **Find Command** again and type **Ports: Preview** instead. Then click on the port `8080` to open the application.
+    
+    b. Press `Enter` to open the application in a new tab.
+    
+      <img src="images/products_welcome_page.png" width="60%" />
 
 4. To inspect the OData metadata that is automatically served by the CAP Java runtime, either:
 
