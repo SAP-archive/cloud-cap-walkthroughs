@@ -70,7 +70,7 @@ CAP applications use [Core Data Services](https://cap.cloud.sap/docs/cds/) (CDS)
 - data structures by using [entity definitions](https://cap.cloud.sap/docs/cds/cdl#entities-views)
 - how data structures are consumed by using [service definitions](https://cap.cloud.sap/docs/cds/cdl#services)
 
-In this step, you'll define a simple service, which also defines it's own entity. In more complex applications, services usually expose projections on entities defined in the data model. You will see this later in [Exercise 2](../exercise2/README.md).
+In this step, you'll define a simple service, which also defines its own entity. In more complex applications, services usually expose projections on entities defined in the data model. You will see this later in [Exercise 2](../exercise2/README.md).
 
 1. Right-click on the `srv` folder, choose **New File**.
 
