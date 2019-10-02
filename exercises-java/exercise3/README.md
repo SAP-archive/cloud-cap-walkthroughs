@@ -24,7 +24,8 @@ For the bookstore, which you'll develop in this exercise we need to create and i
 3. Now that you are in the correct folder, run the following command:
 
     ```bash
-    mvn -B archetype:generate -DarchetypeArtifactId=cds-services-archetype -DarchetypeGroupId=com.sap.cds -DarchetypeVersion=1.0.1 \
+    mvn -B archetype:generate -DarchetypeArtifactId=cds-services-archetype -DarchetypeGroupId=com.sap.cds \
+    -DarchetypeVersion=1.0.1 -DcdsVersion=3.17.4 \
     -DgroupId=com.sap.teched.cap -DartifactId=bookstore
     ```
 4. To open the bookstore project in a new workspace:
@@ -53,7 +54,7 @@ In the terminal run the following commands:
 
 If you open the `package.json` of your bookstore project, you'll see a dependency to `@sap/capire-products`.
 
-<img src="images/package_json_dependency.png" width="80%" />
+<img src="images/package_json_dependency.png" width="65%" />
 
 ## Define the domain model
 
