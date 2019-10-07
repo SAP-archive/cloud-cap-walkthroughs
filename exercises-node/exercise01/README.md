@@ -314,9 +314,7 @@ Great job! Your bookstore application is up and running! Now, let's test it out 
    
     ![set_breakpoint](./resources/set_breakpoint.png)
     
-   h. Stop and run the application again directly from the debug panel.
-      
-3. Let's fire a request to test the custom logic you just developed.
+ 3. Let's fire a request to test the custom logic you just developed.
 
    a. Open a new terminal from the menu **Terminal** -> **New Terminal** and execute:
 
