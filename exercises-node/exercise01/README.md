@@ -313,10 +313,11 @@ Great job! Your bookstore application is up and running! Now, let's test it out 
    g. Open the `service.js` file and set a breakpoint on line 14 where the error is shown.
    
     ![set_breakpoint](./resources/set_breakpoint.png)
+ 
     
  3. Let's fire a request to test the custom logic you just developed.
 
-   a. Open a new terminal from the menu **Terminal** -> **New Terminal** and execute:
+    a. Open a new terminal from the menu **Terminal** -> **New Terminal** and execute:
 
     ```
     curl -X POST http://localhost:4004/catalog/Orders \
@@ -330,13 +331,13 @@ Great job! Your bookstore application is up and running! Now, let's test it out 
     
     ![paused_breakpoint](./resources/paused_breakpoint.png)
        
-   c. Go to the **Node Debug Console**. 
+    c. Go to the **Node Debug Console**. 
    
-   As expected, the response states that the request cannot be completed, because it exceeds the current stock.
+    As expected, the response states that the request cannot be completed, because it exceeds the current stock.
 
-   ![node_debug_console](./resources/node_debug_console.png)
+    ![node_debug_console](./resources/node_debug_console.png)
 
-   [Learn more about custom handlers here.](https://cap.cloud.sap/docs/node.js/api#cds-event-handlers)
+    [Learn more about custom handlers here.](https://cap.cloud.sap/docs/node.js/api#cds-event-handlers)
 
 ### Congratulations!
 
