@@ -28,7 +28,7 @@ For all exercises please make sure to use **Google Chrome**.
 
     ![create_dev_space](./resources/create_dev_space.png)
 
-3. As the dev space name, enter `teched19_<XXX>`. `XXX` is the number provided by your instructors. 
+3. As the dev space name, enter `teched19_<1XX>`. `XX` is the number provided by your instructors. 
 
     ![create_dev_space_name](./resources/create_dev_space_name.png)
 
