@@ -16,7 +16,7 @@ Before you can start using SAP Application Studio, you need to create your devel
 
     <img src="images/create_dev_space.png" width="100%" />
     
-3. Choose a name for your dev space. For example **TechEd19_XXX**. **XXX** is the number given to you by your instructor.
+3. Choose a name for your dev space. For example **TechEd19_1XX**. **XX** is the number given to you by your instructor.
 
 4. Choose **SAP Cloud Business Application** as the application type.
 
