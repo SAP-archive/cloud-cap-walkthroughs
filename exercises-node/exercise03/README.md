@@ -124,7 +124,7 @@ For all exercises please make sure to use **Google Chrome**. If you haven't comp
 
 ### Part C: Consume events of an external service
 
-In order to consume events of the reviews service as an external service, we only need to adapt the `package.json` files of the bookstore and the reviews service. The event handler implementation can remain unchanged.
+In order to consume events of the reviews service as an external service, we only need to adapt the `package.json` file of the bookstore service. The event handler implementation can remain unchanged.
 
 1. First, go to the **bookstore** project folder:
 
