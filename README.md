@@ -21,7 +21,7 @@ You may want use a **free trial account** for SAP Cloud Platform.  Follow the [t
 
 ### [Node.js: Rapid Service Development with SAP Cloud Application Programming Model](exercises-node/)
 
-### [Java with SAP Business Application Studio: Hands-on for DKOM Israel](./dkom ex final.docx)
+### [Java with SAP Business Application Studio: Hands-on for DKOM Israel](exercises-dkom/walkthrough.docx)
 
 
 ## How to obtain support
