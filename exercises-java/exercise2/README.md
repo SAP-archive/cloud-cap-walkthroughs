@@ -103,7 +103,7 @@ Let's deploy the domain model to a database. Now, you will use SQLite, a light-w
 
     a. Go to the terminal where your application is running and press `CTRL + C`.   
    
-    b. Run `npm install --save-dev sqlite3@^4.0.0`
+    b. Run `npm install --save-dev sqlite3`
 
 2. To initialize the database with the defined domain model, run `npm run deploy`
 
