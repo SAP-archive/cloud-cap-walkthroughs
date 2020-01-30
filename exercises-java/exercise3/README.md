@@ -184,7 +184,7 @@ Let's deploy the domain model again to a SQLite database.
 
     a. Open the terminal and go to the root of your project: `cd ~/projects/bookstore`
     
-    b. Run `npm install --save-dev sqlite3@^4.0.0`
+    b. Run `npm install --save-dev sqlite3`
 
 2. To initialize the bookstore database with the defined domain model and sample data, run `npm run deploy`
 
