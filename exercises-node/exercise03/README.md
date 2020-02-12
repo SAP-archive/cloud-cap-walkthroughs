@@ -254,4 +254,4 @@ First, in the bookstore we need to declare the reviews service as an OData servi
 
 ### Congratulations!
 
-You now combined different microservices to talk to each other via synchronous and asynchronous APIs. In [Exercise 4](../exercise04/README.md) you will add a UI for the bookstore application using SAP Fiori Elements.
+You now combined different microservices to talk to each other via synchronous and asynchronous APIs.  You can now proceed with [Exercise 4](../exercise04/README.md).
