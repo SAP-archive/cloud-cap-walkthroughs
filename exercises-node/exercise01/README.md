@@ -189,14 +189,6 @@ In CAP, APIs are provided through services acting as facades for domain model en
 
     This creates a service called `CatalogService` and exposes a read-only entity `Books` and an insert-only entity `Orders`.
 
-    >For more details on the service definition, right-click the `services.cds` file and choose **Open in Service Modeler** from the context menu.
-    >
-    ![Open in Service Modeler](./resources/open_in_service_modeler.png)
-    >
-    > This opens the CDS Service Modeler that let's you explore the modelled entities and their relationships.
-    >
-    ![Service Modeler](./resources/service_modeler.png)   
-
     We have prepared an archive that contains `csv` files with sample data for the database.
 
 3. Download [the archive](./resources/bookstore_csvs.zip) and extract the files to any desired location on your local machine.
