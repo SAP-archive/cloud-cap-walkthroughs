@@ -25,7 +25,7 @@ For the bookstore, which you'll develop in this exercise we need to create and i
 
     ```bash
     mvn -B archetype:generate -DarchetypeArtifactId=cds-services-archetype -DarchetypeGroupId=com.sap.cds \
-    -DarchetypeVersion=1.0.1 -DcdsVersion=3.17.4 \
+    -DarchetypeVersion=1.2.0 -DcdsVersion=3.21.2 \
     -DgroupId=com.sap.teched.cap -DartifactId=bookstore
     ```
 4. To open the bookstore project in a new workspace:

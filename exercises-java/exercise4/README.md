@@ -85,7 +85,9 @@ You will now add a method to the `OrdersService` Java class to decrease the stoc
         @Before(event = CdsService.EVENT_CREATE, entity = "OrdersService.Orders")
         public void validateBookAndDecreaseStockViaOrders(List<Orders> orders) {
             for(Orders order : orders) {
-                validateBookAndDecreaseStock(order.getItems());
+                if(order.getItems() != null) {
+                    validateBookAndDecreaseStock(order.getItems());
+                }
             }
         }
     ```
@@ -106,10 +108,10 @@ You will now add a method to the `OrdersService` Java class to decrease the stoc
     import com.sap.cds.services.handler.annotations.Before;
     import com.sap.cds.services.persistence.PersistenceService;
 
-    import ordersservice.OrderItems;
-    import ordersservice.Orders;
-    import sap.capire.bookstore.Books;
-    import sap.capire.bookstore.Books_;
+    import cds.gen.ordersservice.OrderItems;
+    import cds.gen.ordersservice.Orders;
+    import cds.gen.sap.capire.bookstore.Books;
+    import cds.gen.sap.capire.bookstore.Books_;
     ```
 
 Let's break down what is happening:
@@ -247,7 +249,9 @@ Finally, add a method to the `OrdersService` Java class to calculate the `total`
         public void calculateTotal(List<Orders> orders) {
             for (Orders order : orders) {
                 // calculate net amount for expanded items
-                calculateNetAmount(order.getItems());
+                if(order.getItems() != null) {
+                    calculateNetAmount(order.getItems());
+                }
 
                 // get all items of the order
                 CqnSelect selItems = Select.from(OrderItems_.class).where(i -> i.parent().ID().eq(order.getId()));
@@ -269,7 +273,7 @@ Finally, add a method to the `OrdersService` Java class to calculate the `total`
 2. Also add the following import statements to the top of the `OrdersService` Java class:
 
     ```java
-    import sap.capire.bookstore.OrderItems_;
+    import cds.gen.sap.capire.bookstore.OrderItems_;
     ```
 
 Let's break the code down:

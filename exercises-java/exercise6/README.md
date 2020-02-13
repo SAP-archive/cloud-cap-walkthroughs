@@ -8,23 +8,23 @@ When deploying an application to Cloud Foundry, you can use a manifest to descri
 
 1. Go to the `~/projects/bookstore` folder and create a new file called `manifest.yml`. 
 
-2. Add the following code to the newly created file. Remember to replace `<XXX>` with the number given to you by your instructor.
+2. Add the following code to the newly created file.
 
   ```yaml
   ---
   applications:
-  - name: bookstore-<XXX>
+  - name: bookstore
     path: srv/target/bookstore-1.0-SNAPSHOT.jar
     random-route: true
     services:
-    - bookstore-hana-<XXX>
+    - bookstore-hana
   ```
 
 The manifest describes the name of the application and the path where the application archive can be found. Spring Boot applications can be deployed from a single JAR archive, which is what you are making use of here.
 
 The route of the application, meaning the HTTP endpoint where it will be available, will be randomized to prevent clashes with other application routes.
 
-The name of SAP HANA service instance you created in [Exercise 5](../exercise5/README.md) is used here under the services section (`bookstore-hana-<XXX>`)
+The name of SAP HANA service instance you created in [Exercise 5](../exercise5/README.md) is used here under the services section (`bookstore-hana`)
 
 ## Auto configuration of the SAP HANA database connection
 
@@ -45,7 +45,7 @@ The described feature is again available as a further plugin in CAP Java. Theref
 
 Even with the Cloud Foundry feature enabled, CAP Java ensures that your application can run still run locally with SQLite or SAP HANA auto-configured based on default-env.json. It provides a seamless developer experience in all environments.
 
-In [Exercise 5](../exercise5/README.md) you added the additional Java system property `-Dspring.profiles.active=cloud` to your application to ensure that the default SQLite configuration from the `application.yaml` does not take effect. When deploying the application to Cloud Foundry this is done automatically for you by the Cloud Foundry Java Buildpack.
+In [Exercise 5](../exercise5/README.md) you added the additional Java system property `-Dspring-boot.run.profiles=cloud` to your application to ensure that the default SQLite configuration from the `application.yaml` does not take effect. When deploying the application to Cloud Foundry this is done automatically for you by the Cloud Foundry Java Buildpack.
 
 ## Pushing the application
 
@@ -59,9 +59,7 @@ You are now ready to push your application to the cloud by running the following
 
    The manifest will be automatically picked up.
 
-4. Run `cf app bookstore-<XXX>` to retrieve the application URL, which can be found under `routes`. 
-
-   Replace `<XXX>` with the number given to you by your instructor.
+4. Run `cf app bookstore` to retrieve the application URL, which can be found under `routes`.
 
 5. Open this URL to test your application running in the cloud.
 
