@@ -16,11 +16,11 @@ Before you can start using SAP Application Studio, you need to create your devel
 
     <img src="images/create_dev_space.png" width="100%" />
     
-3. Choose a name for your dev space. For example **TechEd19_1XX**. **XX** is the number given to you by your instructor.
+3. Choose a name for your dev space. For example **TechEd19**.
 
 4. Choose **SAP Cloud Business Application** as the application type.
 
-    By selecting **SAP Cloud Business Application**, your space comes with several extensions out of the box that you'll need to develop CAP applications.  For example, CDS tools are built in. This saves unnecessary setup time.
+    By selecting **SAP Cloud Business Application**, your space comes with several extensions out of the box that you'll need to develop CAP applications. For example, CDS tools are built in. This saves unnecessary setup time.
 
 5. Choose **Create Dev Space**.
 
@@ -46,7 +46,7 @@ Before you can start using SAP Application Studio, you need to create your devel
 
     ```bash
     mvn -B archetype:generate -DarchetypeArtifactId=cds-services-archetype -DarchetypeGroupId=com.sap.cds \
-    -DarchetypeVersion=1.0.1 -DcdsVersion=3.17.4 \
+    -DarchetypeVersion=1.2.0 -DcdsVersion=3.21.2 \
     -DgroupId=com.sap.teched.cap -DartifactId=products-service -Dpackage=com.sap.teched.cap.productsservice
     ```
     
