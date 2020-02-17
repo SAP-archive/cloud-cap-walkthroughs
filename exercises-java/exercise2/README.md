@@ -1,7 +1,7 @@
 # Exercise 2 - Creating a reusable Products Service
 
 The last exercise was about quickly setting up a working CAP application. This exercise is about learning how to extend the application to a complete products service.
-You'll take advantage of all the out-of-the-box features provided by the CAP Java Stack such as using SQLite as a database for local development. As a result, you'll remove your custom handlers written in the first exercise. Later, in [Exercise 5](../exercise5/README.md), you will swap out SQLite with the SAP HANA service, when preparing your application for the cloud.
+You'll take advantage of all the out-of-the-box features provided by the CAP Java SDK such as using SQLite as a database for local development. As a result, you'll remove your custom handlers written in the first exercise. Later, in [Exercise 5](../exercise5/README.md), you will swap out SQLite with the SAP HANA service, when preparing your application for the cloud.
 
 ## Define the Domain Model
 
@@ -135,7 +135,7 @@ Let's deploy the domain model to a database. Now, you will use SQLite, a light-w
 
 ## Use CAP's generic persistence handling
 
-The CAP Java stack has a [Persistence Service](https://cap.cloud.sap/docs/java/srv-run#the-persistence-service) that provides out-of-the-box capabilities to store and retrieve entities from a database. Therefore no custom coding is required for this. The entities defined in your `AdminService` will be automatically served via OData and you can just delete the `AdminService.java` file that was created earlier.
+The CAP Java SDK has a [Persistence Service](https://cap.cloud.sap/docs/java/srv-run#the-persistence-service) that provides out-of-the-box capabilities to store and retrieve entities from a database. Therefore no custom coding is required for this. The entities defined in your `AdminService` will be automatically served via OData and you can just delete the `AdminService.java` file that was created earlier.
 
 1. Delete the `AdminService.java` file in the `handlers` folder, which you have created in [Exercise 1](../exercise1/README.md). 
 
