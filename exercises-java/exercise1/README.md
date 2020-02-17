@@ -4,7 +4,7 @@ First things first, you need to set up your development environment and check th
 
 For this exercise, we'll use the new SAP Application Studio as the development tool of choice. SAP Application Studio provides a web-based Visual Studio Code-like experience. So it's like VS Code, but for your browser.  What's great about using SAP Application Studio? You get an editor, useful extensions and all the tools required to develop CAP applications and full access to the terminal.
 
-To make sure everything is set up correctly, this exercise also includes how to build & run a simple Hello World application. CAP supports both Java and Node.js development. But for this exercise, we'll be using Java. The [CAP Java stack](https://cap.cloud.sap/docs/java/) is able to tightly integrate with [Spring Boot](https://spring.io/projects/spring-boot), which provides a lot of features out of the box. This means, Spring Boot will be your runtime container.
+To make sure everything is set up correctly, this exercise also includes how to build & run a simple Hello World application. CAP supports both Java and Node.js development. But for this exercise, we'll be using Java. The [CAP Java SDK](https://cap.cloud.sap/docs/java/) is able to tightly integrate with [Spring Boot](https://spring.io/projects/spring-boot), which provides a lot of features out of the box. This means, Spring Boot will be your runtime container.
 
 ## Open SAP Application Studio and create your Dev Space
 
@@ -229,4 +229,4 @@ Later on in the session, you'll learn that CAP Java runtime can handle all CRUD 
 ## Great job!
 
 You have successfully developed a basic CAP Java application AND added custom logic to handle specific requests. [Exercise 2](../exercise2/README.md) will show you how to extend the application and build the products service from scratch.
-In addition, you will use an actual database as the persistence and see some of the features the CAP Java stack provides out of the box, without a single line of custom coding.
+In addition, you will use an actual database as the persistence and see some of the features the CAP Java SDK provides out of the box, without a single line of custom coding.
