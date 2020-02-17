@@ -15,11 +15,11 @@ For this exercise, we'll use the new SAP Application Studio as the development t
 What's great about using SAP Application Studio? You get an editor, useful extensions and all the tools required to develop CAP applications as well as full access to the terminal.
 
 To make sure everything is set up correctly, this exercise also includes how to build & run a simple Hello World application. 
-CAP supports both Java and Node.js development. But for this exercise, we'll be using Java. The CAP Java stack is able to tightly integrate with [Spring Boot](https://spring.io/projects/spring-boot), which provides a lot of features out of the box. This means, Spring Boot will be your runtime container.
+CAP supports both Java and Node.js development. But for this exercise, we'll be using Java. The CAP Java SDK is able to tightly integrate with [Spring Boot](https://spring.io/projects/spring-boot), which provides a lot of features out of the box. This means, Spring Boot will be your runtime container.
 
 ### [Exercise 2: Creating a reusable Products Service](exercise2/README.md)
 
-The last exercise was about quickly setting up a working CAP application. This exercise is about learning how to extend the application and to build a complete products service. You'll take advantage of all the out-of-the-box features provided by the CAP Java Stack. As a result, you'll remove your custom handlers and use SQLite as a database for local development. Later, in Exercise 5, you will swap out SQLite with the SAP HANA service, when preparing your application for the cloud.
+The last exercise was about quickly setting up a working CAP application. This exercise is about learning how to extend the application and to build a complete products service. You'll take advantage of all the out-of-the-box features provided by the CAP Java SDK. As a result, you'll remove your custom handlers and use SQLite as a database for local development. Later, in Exercise 5, you will swap out SQLite with the SAP HANA service, when preparing your application for the cloud.
 
 ### [Exercise 3: Building the Bookstore](exercise3/README.md)
 
