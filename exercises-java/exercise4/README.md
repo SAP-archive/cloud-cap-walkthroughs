@@ -121,7 +121,7 @@ Let's break down what is happening:
 - After that the available stock of the book is compared against the ordered amount. If enough stock is available the stock is decreased on the book and the book is updated within the database.
 - As order items can also be created via a [deep insert](https://cap.cloud.sap/docs/java/srv-run#deep-insert--upsert) on the `Orders` entity, the same validation is triggered by the `validateBookAndDecreaseStockViaOrders` method.
 
-It is important to note, that the CAP Java stack automatically takes care of combining all database queries and updates in a single transaction. This means, that if the creation of the order item fails for some reason, the stock of the book will not be decreased.
+It is important to note, that the CAP Java SDK automatically takes care of combining all database queries and updates in a single transaction. This means, that if the creation of the order item fails for some reason, the stock of the book will not be decreased.
 
 ### Testing the handler
 
