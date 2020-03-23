@@ -36,7 +36,7 @@ npm set @sap:registry=https://npm.sap.com
 To install cds globally, run:
 
 ```
-npm i -g @sap/cds
+npm i -g @sap/cds-dk
 ```
 
    > Note: You can check your cds version, by running the following command:`cds --version`
