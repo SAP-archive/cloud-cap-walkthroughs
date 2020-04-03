@@ -28,7 +28,7 @@ Login to the Cloud Foundry Environment using the cf CLI:
 
    The `<CF_API>` endpoint can be obtained from the Overview page of your Subaccount in Cloud Cockpit.
 
-3. Run `cf login` and authenticate using your login credentials.
+3. Run `cf login -a <CF_API>` and authenticate using your login credentials.
 
 Initializing the SAP HANA database is now as simple as running these commands in the terminal:
 
