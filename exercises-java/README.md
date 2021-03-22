@@ -1,8 +1,11 @@
 # Scenario
 
 Welcome to the SAP Cloud Application Programming Model hands-on session! During this session, you'll learn how to use [CAP](https://cap.cloud.sap/docs/) to build an online store, in this case, a store for books or bookstore, as we like to call it. 
+
 So, we've established that "books" will be your product of choice for this exercise. The interesting thing about CAP is that you can easily build services, but also reuse an existing service to make your development life easier. In this case, we'll show you how to reuse a products service. 
+
 Before you get started, it's important to understand that CAP is both [open & opinionated](https://cap.cloud.sap/docs/about/#open--opinionated). That might sound like a contradiction, but it's simple. You can choose to follow our guidance and develop along our golden path of best practices. However, you can also choose your own path, typical freestyle-style. Therefore, "open & opinionated".
+
 Ready? Let's get started with the mission [Build a Business Application Using CAP for Java](https://developers.sap.com/mission.cap-java-app.html).
 
 ## Exercises
@@ -58,5 +61,4 @@ This project is provided "as-is": there is no guarantee that raised issues will 
 
 ## License
 
-Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved.
-This project is licensed under the Apache Software License, Version 2.0 except as noted otherwise in the [LICENSE](LICENSE) file.
+Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, Version 2.0 except as noted otherwise in the [LICENSE](https://github.com/SAP-samples/cloud-cap-walkthroughs/blob/main/LICENSES/Apache-2.0.txt) file.
