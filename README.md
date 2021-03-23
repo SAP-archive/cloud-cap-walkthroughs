@@ -1,4 +1,7 @@
 # Samples for the SAP Cloud Application Programming Model
+
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/cloud-cap-walkthroughs)](https://api.reuse.software/info/github.com/SAP-samples/cloud-cap-walkthroughs)
+
 ## Description
 
 This repository contains tutorials for the sample apps of the [SAP Cloud Application Programming Model](https://cap.cloud.sap).
