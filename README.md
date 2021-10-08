@@ -1,3 +1,8 @@
+![](https://img.shields.io/badge/STATUS-NOT%20CURRENTLY%20MAINTAINED-red.svg?longCache=true&style=flat)
+
+# Notice
+This public repository is read-only and no longer maintained. For the latest sample code repositories, visit the [SAP Samples](https://github.com/SAP-samples) organization.
+
 # Samples for the SAP Cloud Application Programming Model
 
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/cloud-cap-walkthroughs)](https://api.reuse.software/info/github.com/SAP-samples/cloud-cap-walkthroughs)
